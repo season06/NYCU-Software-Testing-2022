@@ -1,5 +1,7 @@
 # NYCU-Software-Testing-2022
 
+[![Java CI with Maven](https://github.com/season06/ST-2022-310551019/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/season06/ST-2022-310551019/actions/workflows/build.yml)
+
 ## Course Syllabus
 - **[Software Testing](https://timetable.nycu.edu.tw/?r=main/crsoutline&Acy=110&Sem=2&CrsNo=5252)**
    - Institute of Computer Science and Engineering

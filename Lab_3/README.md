@@ -25,3 +25,15 @@
         - Unable to pass one of the test cases
     - Add Travis CI status image and screenshots (both pass and fail) to your **README.md**. 
 - Submit your Github repository link to E3.
+
+---
+
+## Test Results
+
+### ● Success
+![alt text](./images/build_success_1.png)
+![alt text](./images/build_success_2.png)
+
+### ● Fail
+![alt text](./images/build_failed_1.png)
+![alt text](./images/build_failed_2.png)
