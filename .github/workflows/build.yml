@@ -1,10 +1,10 @@
-name: HW3 Java CI with Maven
+name: Java CI with Maven
 
 on: 
   push:
-    branches: [ "hw3" ]
+    branches: [ "master" ]
   pull_request: 
-    branches: [ "hw3" ]
+    branches: [ "master" ]
 
 jobs:
   build:
