@@ -134,3 +134,28 @@ int main()
 - ASan: yes (sometimes)
 - Valgrind: no
  
+ 
+## ● Redzone with Stack Buffer Overflow
+
+### Source Code
+```c++
+#include <iostream>
+int main()
+{
+        int redzone_size = 2;
+        int a[2], b[4];
+        
+        for (int i = 1; i <= 4; i++)
+                *(&a[1] + 7*redzone_size + i) = 2; // jump to `b` address
+
+        for (int i = 0; i < 4; i++)
+                std::cout << b[i] << "\n";
+
+        *(&a[1] + 15*redzone_size + 1) = 100;  // jump outside the redzone 
+
+        return 0;
+}
+```
+
+## result
+ASan can't find the error when the stack buffer overflow crosses the RedZone.
