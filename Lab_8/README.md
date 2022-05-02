@@ -6,3 +6,21 @@
 	- target.cfg : 用來找位置的 cfg 圖片
 	- solve.py : 執行 angr 的 python (please use python3)
 	- flag.txt : 正確的參數輸入 (argv[1])
+
+---
+
+## Install angr
+- OS: Linux Ubuntu 20
+
+```
+pip3 install angr
+pip3 install angr-utils 
+pip3 install bingraphvis
+sudo apt install graphviz
+```
+
+## Generate cfg.png
+https://github.com/axt/angr-utils
+```
+python cfg.py
+```
